@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+}
+.sec2{
+    
+    background-color: rgba(0, 0, 0, 0.888);
+    min-height:100vh;
+    min-width:100vw;
+}
+.flexwrap{
+    display: flex;
+    
+    justify-content: space-around;
+}
+#canva{
+    display: block;
+    border-radius: 10px;
+    
+    margin-top: 50px;
+    height: 650px;
+    width: 750px;
+    background-color:rgb(236, 199, 199);
+    box-sizing: border-box;
+}
+
+.gridbox{
+    margin: 20px;
+    display: grid;
+    height: 610px;
+    width: 710px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(236, 199, 199);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.griditems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: xx-large;
+    background-color: rgb(36, 36, 44);
+    border: 2px solid rgb(121, 93, 93);
+    border-radius:10px ;
+    cursor: pointer;
+    transition: transform  0.2s;
+}
+.griditems h1{
+    opacity: 0;
+}
+griditems:hover{
+   
+    transform: translate(3px,-3px)
+}
+.tilelightup{
+    background-color: rgb(134, 242, 46);
+    
+    outline: 1px solid rgb(194, 72, 72);
+    
+}
+.correctclick{
+    background-color: lightgreen;
+    
+}
+.wrongclick{
+    background-color: red;
+    
+}
+#start,#restart{
+    display: block;
+    width:180px;
+    height: 90px;
+    margin: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    outline: 1px solid white;
+    font-family: 'Black Ops One', cursive;
+}
+#start:hover,#restart:hover{
+    background-color: rgb(70, 48, 48);
+}
+.btncont{
+    
+    /*position:absolute;*/
+    margin-top: 240px;
+    margin-left:45px ;
+}
+
+.GO{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(181, 169, 169);
+}
+
+.wrapper{
+    /*position: absolute;*/
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+    
+    font-size: xx-large;
+}
+
+
+.sec3{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgb(33, 29, 29),rgb(50, 52, 54));
+ 
+    
+}
+.gameovercont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    text-align: center;
+}
+.gameovercont h1{
+    font-family: 'Monoton', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+.gameovercont button{
+    color: black;
+    display: inline-block;
+    font-size: x-large;
+    font-weight:400;
+    font-family: 'Black Ops One', cursive;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 25px;
+    background: rgb(167, 132, 132);
+}
+.gameovercont button:hover{
+    background: rgb(245, 224, 224);
+    cursor: pointer;
+}
+.gameovercont h1:hover{
+    font-size: 80px;
+    cursor: default;
+}
+
+.score{
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+    margin-left: 84%;
+    font-size: xx-large;
+}
+
+.finscore{
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+}
+
+.lihighscore{
+    color: white;
+    font-family: 'Black Ops One', cursive;
+}
+
+.sec4{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgb(33, 29, 29),rgb(50, 52, 54));
+    text-align: center;
+    
+}
+.leadcont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.leadcont h1{
+    font-family: 'Monoton', cursive;
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: rgb(231, 200, 200);
+}
+
+.highscorelist{
+    font-family: 'Monoton', cursive;
+    
+}
+.lihighscore{
+    font-size: 35px;
+}
+
+    
+
+#playagain1{
+    display: block;
+    margin-top: 20px;
+    font-family: 'Black Ops One', cursive;
+    font-size: x-large;
+    font-weight:400;
+    padding: 15px;
+    border-radius: 15px;
+    background-color:rgb(167, 132, 132) ;
+    
+}
+#playagain1:hover{
+    background-color:rgb(245, 224, 224) ;
+    cursor: pointer;
+}
+@media (max-width:600px){
+ .flexwrap{
+     flex-direction: column;
+     
+ }
+ .gridbox{
+    display: grid;
+    height: 210px;
+    width: 250px;
+    margin: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    
+ }
+ #canva{
+     
+    height:260px;
+    width: 260px;
+    
+    margin-left: 15%;
+    margin-top: 25px;
+ }
+ .wrapper{
+     margin-top: 25px;
+     font-size: medium;
+ }
+ #start,#restart{
+     
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 10px;
+    }
+ .btncont{
+    
+        /*position:absolute;*/
+        margin-top: 40px;
+        margin-left:30% ;
+}
+.leadcont h1{
+    font-family: 'Monoton', cursive;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.lihighscore{
+    font-size: 25apx;
+}
+}
+@media (min-width:601px) and (max-width:850px){
+    .flexwrap{
+        flex-direction: column;
+        
+    }
+    .gridbox{
+       display: grid;
+       height: 410px;
+       width: 450px;
+       margin: 10px;
+       grid-template-columns: auto auto auto auto;
+       grid-template-rows: auto auto auto auto;
+       row-gap: 5px;
+       column-gap: 5px;
+       
+    }
+    #canva{
+        
+       height:430px;
+       width: 470px;
+       margin-left: 19%;
+       margin-top: 20px;
+    }
+    .wrapper{
+        margin-top: 25px;
+        font-size: medium;
+    }
+    #start,#restart{
+        
+       display: block;
+       width: 200px;
+       height: 60px;
+       margin-top: 0px;
+       border-radius: 25px;
+       font-size: 22px;
+       padding: 7px;
+    }
+    .btncont{
+       
+           /*position:absolute;*/
+           margin-top: 20px;
+           margin-left:30% ;
+   }
+   .leadcont h1{
+       font-family: 'Monoton', cursive;
+       font-size: 28px;
+       margin-bottom: 30px;
+   }
+   .lihighscore{
+       font-size: 25px;
+   }
+}
+@media (min-width:851px) and (max-width:1099px){
+    .flexwrap{
+        justify-content: space-around; 
+         
+     }
+     .gridbox{
+         margin: 10px;
+         display: grid;
+         height: 520px;
+         width: 390px;
+         grid-template-columns: auto auto auto auto;
+         grid-template-rows: auto auto auto auto;
+         background-color: rgb(236, 199, 199);
+         column-gap: 10px;
+         row-gap: 10px;
+     }
+     #canva{
+         display: block;
+         border-radius: 10px;
+         
+         margin-top: 100px;
+         height: 540px;
+         width: 410px;
+         background-color: rgb(236, 199, 199);
+         box-sizing: border-box;
+     }
+     #start,#restart{
+         
+         display: block;
+         width: 150px;
+         height: 70px;
+         margin-top: 0px;
+         border-radius: 20px;
+         font-size: 22px;
+         padding: 7px;
+     }
+     .btncont{
+     
+         /*position:absolute;*/
+         margin-top: 240px;
+         margin-left:7px;
+     }
+     .wrapper{
+         margin-top: 240px;
+         margin-left: 10px;
+         font-size: 22px;
+     }
+}
+
+
+@media (min-width:1100px) and (max-width:1350px){
+    .flexwrap{
+       justify-content: space-around; 
+        
+    }
+    .gridbox{
+        margin: 10px;
+        display: grid;
+        height: 510px;
+        width: 540px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        background-color: rgb(236, 199, 199);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    #canva{
+        display: block;
+        border-radius: 10px;
+        
+        margin-top: 100px;
+        height: 530px;
+        width: 560px;
+        background-color: rgb(236, 199, 199);
+        box-sizing: border-box;
+    }
+    #start,#restart{
+        
+        display: block;
+        width: 180px;
+        height: 80px;
+        margin-top: 0px;
+        border-radius: 25px;
+        font-size: 25px;
+        padding: 8px;
+    }
+    .btncont{
+    
+        /*position:absolute;*/
+        margin-top: 240px;
+        margin-left:7px;
+    }
+    .wrapper{
+        margin-top: 240px;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+}

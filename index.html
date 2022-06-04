@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
+        <title>Piano  tile game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&display=swap" rel="stylesheet">
+   
+    </head>
+    <body class="body" >
+        
+        <section class="sec1">
+            <div class="container" >
+                <h1>Piano  Tile <br>Game</h1>
+    
+                <center>
+                    <form class="form" action="index.html" onsubmit="readybtn()" method="post">
+                        <h2>Enter your Username</h2>
+                        <input type="text" name="fname" placeholder="Type here" id="username" required>
+                        <input type="submit" value="READY" id="readybutton"  >
+                        
+                    </form>
+                </center>
+                
+            </div>
+        </section>
+     
+        <section class="sec2">
+         <div class="flexwrap">
+            <div class="btncont">
+                <button id="start">START</button>
+                <button id="restart">RE-START</button>
+            </div>
+            
+            <div id="canva">
+                <div class="gridbox">
+                    <div class="griditems"><h1>A</h1></div>
+                    <div class="griditems"><h1>B</h1></div>
+                    <div class="griditems"><h1>C</h1></div>
+                    <div class="griditems"><h1>D</h1></div>
+                    <div class="griditems"><h1>E</h1></div>
+                    <div class="griditems"><h1>F</h1></div>
+                    <div class="griditems"><h1>G</h1></div>
+                    <div class="griditems"><h1>H</h1></div>
+                    <div class="griditems"><h1>I</h1></div>
+                    <div class="griditems"><h1>J</h1></div>
+                    <div class="griditems"><h1>K</h1></div>
+                    <div class="griditems"><h1>L</h1></div>
+                    <div class="griditems"><h1>M</h1></div>
+                    <div class="griditems"><h1>N</h1></div>
+                    <div class="griditems"><h1>O</h1></div>
+                    <div class="griditems"><h1>P</h1></div>
+    
+                </div>
+            </div>
+            
+            <div class="wrapper">
+                <h1 style="font-family: 'Black Ops One', cursive;">Stopwatch</h1>
+                
+                <p style="font-family: 'Black Ops One', cursive;"><span id="seconds">00</span>:<span id="tens">00</span></p>
+                <h1 style="font-family: 'Black Ops One', cursive; margin-top:35px;">Score</h1>
+                <p style="font-family: 'Black Ops One', cursive;" id="scoreval">00</p
+            </div> 
+            
+         </div>
+        </section>
+        <section class="sec3">
+            <div class="gameovercont">
+                <h1>GAME OVER</h1>
+                <button id="playagain">PLAY AGAIN</button>
+                <button id="leader" onclick="leadbtn()">LEADERBOARD</button>
+                <p class="finscore">SCORE:<span id="finalscore"></span></p>
+            </div>
+            
+        </section>
+        <section class="sec4">
+            <div class="leadcont">
+                <h1>LEADERBOARD</h1>
+                <ul id="highscorelist" style="list-style-type: none;">
+
+                </ul>
+                <center>
+                    <button id="playagain1" onclick="playagain()">PLAY AGAIN</button>
+                </center>
+                
+
+                
+            </div>
+
+        </section>
+   
+    </body>
+    <script src="script.js"></script>
+    
+</html>
